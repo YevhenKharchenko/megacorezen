@@ -1,36 +1,83 @@
 .hero-section {
-  padding-top: 121px;
-  padding-bottom: 45px;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top 0 center;
-  background-size: cover;
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  background-image: url(../img/hero/hero-anonymous-mob.png),
+    url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, top 0 center;
+  background-size: auto, cover;
+  padding-top: 80px;
+  padding-bottom: 247px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 174px;
-    padding-bottom: 245px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
+    padding-top: 143px;
+    padding-bottom: 130px;
+    background-image: url(../img/hero/hero-anonymous-desk.png),
+      url(../img/hero/hero-bg-desk.jpg);
+    background-position: bottom right 28px, top 0 center;
+    max-width: 1440px;
   }
 }
 
 .hero-title {
-  margin-bottom: 15px;
+  text-shadow: 0 0 12px 0 #000;
+  font-family: 'Nosifer', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 22px;
 
   @include media(desktop) {
-    margin-bottom: 16px;
+    font-size: 88px;
+    line-height: 1.13636;
+    max-width: 836px;
+    margin-bottom: 32px;
   }
 }
 
 .hero-text {
-  text-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lexend', sans-serif;
   font-weight: 500;
-  font-size: 22px;
-  line-height: 1.36364;
-  color: #edfcff;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 24px;
-    max-width: 746px;
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 836px;
+  }
+}
+
+.hero-text-bottom {
+  margin-top: 12px;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f00;
+  border-radius: 96px;
+  padding: 26px 22px;
+  max-width: 245px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  text-align: right;
+  color: #fff;
+  margin-top: 32px;
+
+  @include media(desktop) {
+    margin-top: 68px;
   }
 }

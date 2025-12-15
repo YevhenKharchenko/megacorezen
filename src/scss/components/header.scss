@@ -1,29 +1,29 @@
 .header {
-  box-shadow: 0 4px 4px 0 rgba(255, 204, 0, 0.25);
-  background: #0b0a08;
-  padding: 15px 0;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
+
+  @include media(desktop) {
+    padding: 16px 0;
+  }
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   @include media(desktop) {
-    justify-content: start;
   }
 }
 
 .nav {
   display: flex;
+  justify-content: end;
   align-items: center;
 
   @include media(desktop) {
-    gap: 147px;
+    justify-content: space-between;
   }
 }
 
@@ -31,15 +31,23 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
   }
 }
 
 .header-logo-link {
-  width: 50px;
-  height: 40px;
+  display: none;
 
   @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.44444;
+    text-transform: uppercase;
+    color: #f00;
   }
 }
 
@@ -60,28 +68,25 @@
 
 .nav-list-link {
   @include media(desktop) {
-    padding: 8px 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    color: #edfcff;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
     transition: all 0.3s ease-in-out;
 
     &:hover,
     &.active {
-      color: #fc0;
+      color: #f00;
     }
   }
 }
 
-.nav-list-link.active {
-  color: #fc0;
-}
-
 .nav-btn {
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include media(desktop) {
     display: none;
@@ -90,9 +95,8 @@
 
 .close-btn {
   display: none;
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
+  align-items: center;
+  justify-content: center;
 
   @include media(desktop) {
     display: none;

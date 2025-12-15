@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lexend', sans-serif;
   color: $_main_color;
   background: $_main_bg_color;
 
@@ -30,15 +30,15 @@ html {
 .container {
   width: 100%;
   max-width: 375px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     max-width: 1440px;
-    padding-right: 72px;
-    padding-left: 72px;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }
 
@@ -51,35 +51,17 @@ html {
 }
 
 .section-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #fc0;
-  margin-bottom: 5px;
-  line-height: 1.5;
+  text-shadow: 0 0 8px 0 #f00;
+  font-family: 'Nosifer', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 42px;
 
   @include media(desktop) {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-}
-
-.section-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #edfcff;
-  margin-bottom: 25px;
-  background-image: linear-gradient(to right, #fc0 0%, transparent 100%);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% 2px;
-  max-width: max-content;
-  line-height: 1.5;
-
-  @include media(desktop) {
-    font-size: 42px;
-    margin-bottom: 48px;
+    font-size: 36px;
+    margin-bottom: 60px;
   }
 }
