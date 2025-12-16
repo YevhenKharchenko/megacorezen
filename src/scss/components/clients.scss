@@ -1,0 +1,47 @@
+.clients-section {
+  @include media(desktop) {
+  }
+}
+
+.clients-bg-wrapper {
+  background-image: url(../img/clients/clients-anonymous-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+  padding-top: 80px;
+  padding-bottom: 428px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: url(../img/clients/clients-anonymous-desk.png);
+    background-position: bottom right;
+    max-width: 1440px;
+  }
+}
+
+.clients-container {
+  @include media(desktop) {
+  }
+}
+
+.clients-title {
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.clients-text {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #fff;
+
+  @include media(desktop) {
+    max-width: 790px;
+  }
+}

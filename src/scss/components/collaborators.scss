@@ -1,0 +1,121 @@
+.collaborators-section {
+  @include media(desktop) {
+  }
+}
+
+.collaborators-section-wrapper {
+  padding-top: 80px;
+  padding-bottom: 64px;
+  background-image: url(../img/collaborators/collaborators-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+  background-size: cover;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 54px;
+    background-image: url(../img/collaborators/collaborators-bg-desk.png);
+    max-width: 1440px;
+  }
+}
+
+.collaborators-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media(desktop) {
+    padding: 0 120px;
+  }
+}
+
+.collaborators-swiper-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.collaborators-swiper-container.show {
+  visibility: visible;
+}
+
+.collaborators-swiper-wrapper {
+  @include media(desktop) {
+    display: flex !important;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.collaborators-slide {
+  box-shadow: 0 0 12px #f00;
+  border: 1px solid #f00;
+  border-radius: 12px;
+  background: #0c0c13;
+  padding: 22px 12px;
+  width: 100% !important;
+  max-width: 300px;
+  display: flex !important;
+  flex-direction: column;
+
+  @include media(desktop) {
+  }
+}
+
+.collaborators-img {
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collaborators-item-name {
+  text-shadow: 0 0 8px #f00;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.collaborators-item-text {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.collaborators-text {
+  padding: 0 20px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #fff;
+  margin-top: 22px;
+
+  @include media(desktop) {
+    padding: 0;
+    margin-top: 42px;
+  }
+}
+
+.collaborators-text-br {
+  @include media(desktop) {
+    display: none;
+  }
+}

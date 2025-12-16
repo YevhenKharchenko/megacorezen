@@ -1,0 +1,92 @@
+.contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-section-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../img/collaborators/collaborators-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+  background-size: cover;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 45px;
+    background-image: url(../img/collaborators/collaborators-bg-desk.png);
+    max-width: 1440px;
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 42px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contact-list-item {
+  box-shadow: 0 0 12px #f00;
+  background: #0c0c13;
+  border: 1px solid #f00;
+  border-radius: 12px;
+  padding: 22px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 300px;
+  }
+}
+
+.contact-item-title {
+  text-shadow: 0 0 8px #f00;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-item-text {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-img {
+  box-shadow: 0 0 12px #f00;
+  border-radius: 22px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 928px;
+  }
+}

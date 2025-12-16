@@ -1,0 +1,129 @@
+.pricing-section {
+  @include media(desktop) {
+  }
+}
+
+.pricing-section-wrapper {
+  padding-top: 80px;
+  padding-bottom: 157px;
+  background-image: url(../img/pricing/pricing-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+  background-size: cover;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 141px;
+    background-image: url(../img/pricing/pricing-bg-desk.png);
+    max-width: 1440px;
+  }
+}
+
+.pricing-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media(desktop) {
+    padding: 0 120px;
+  }
+}
+
+.pricing-swiper-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.pricing-swiper-container.show {
+  visibility: visible;
+}
+
+.pricing-swiper-wrapper {
+  @include media(desktop) {
+    display: flex !important;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.pricing-slide {
+  box-shadow: 0 0 12px #f00;
+  border: 1px solid #f00;
+  border-radius: 12px;
+  background: #0c0c13;
+  padding: 22px 12px;
+  width: 100% !important;
+  max-width: 300px;
+  min-height: 323px !important;
+  display: flex !important;
+  flex-direction: column;
+
+  @include media(desktop) {
+  }
+}
+
+.question-icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+.pricing-item-title {
+  text-shadow: 0 0 8px #f00;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.pricing-item-price {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 1.4;
+  text-align: center;
+  color: #f00;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.pricing-item-span {
+  font-size: 22px;
+}
+
+.pricing-features-list {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.pricing-features-item {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
