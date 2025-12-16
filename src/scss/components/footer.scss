@@ -14,7 +14,10 @@
   }
 }
 
-.footer-title {
+.footer-title-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Lexend', sans-serif;
   font-weight: 700;
   font-size: 18px;

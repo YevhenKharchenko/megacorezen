@@ -86,7 +86,5 @@
   margin-right: auto;
 
   @include media(desktop) {
-    width: 100%;
-    max-width: 928px;
   }
 }
